@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Image Mapping</title>
+    
+    <!-- STYLE SHEETS -->
+    <link href="style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <main>
+    <!-- Language selector radio buttons and intro text -->
+    <div id="top">
+        <form id="lang-select">
+            <input type="radio" id="american" name="lang-select" value="american" checked />
+            <label for="american"><img src="img/eng-simp.png" alt="American English"></label>
+            <input type="radio" id="british" name="lang-select" value="british" />
+            <label for="british"><img src="img/eng-trad.png" alt="British English"></label>
+        </form>
+        <div id="intro">
+            <!-- Text to be supplied dynamically -->
+            <h2 id="choose"></h2>
+        </div>
+    </div>
+
+    <!-- Color wheel and image map -->
+    <div id="color-select">
+        <map name="wheel-map">
+          <area id="0-wedge-red" shape="poly" coords="116,110,218,110,212,143,206,157,189,181,167,197" alt="red" />
+          <area id="1-wedge-orange" shape="poly" coords="117,108,218,108,214,80,205,59,186,35,167,21" alt="orange" />
+          <area id="2-wedge-yellow" shape="poly" coords="115,107,165,20,146,11,115,6,84,11,65,20" alt="yellow" />
+          <area id="3-wedge-green" shape="poly" coords="113,108,63,21,44,35,25,59,16,80,12,108" alt="green" />
+          <area id="4-wedge-blue" shape="poly" coords="113,110,12,110,18,143,24,157,41,181,63,197" alt="blue" />
+          <area id="5-wedge-violet" shape="poly" coords="115,111,64,198,84,207,115,212,148,207,165,198" alt="violet" />
+        </map>
+        <img usemap="#wheel-map" id="color-wheel" src="img/color-wheel.png" alt="Color Wheel" />
+    </div>
+
+    <!-- Display div with color spectrum -->
+    <div id="color-display"></div>
+
+    <footer>
+        <p id="copyright">&copy; Marc Rivers 2020</p>
+        <span id="contact">
+            <a href="mailto:mrivers2133@outlook.com"><img class="social-icon" src="img/mail-dark-small.png" alt="Contact by email" /></a>
+            <!-- Mail envelope image from iconfinder.com -->
+            <a href="https://github.com/louisvillager?tab=repositories" target="_blank"><img class="social-icon" src="img/Github_2.png" alt="See Github repositories" /></a>
+            <a href="https://www.linkedin.com/in/marc-rivers/" target="_blank"><img class="social-icon" src="img/Linkedin_2.png" alt="Connect on LinkedIn" /></a>
+        </span>
+        <p id="attribution">Github and LinkedIn icons courtesy of <a href="https://www.vecteezy.com/vector-art/95039-free-social-media-icons" target="_blank">Vecteezy</a></p>
+    </footer>
+  </main>
+
+    <!-- SCRIPTS -->
+    <script src="script.js"></script>
+
+  </body>
+</html>
